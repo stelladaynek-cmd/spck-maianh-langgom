@@ -19,13 +19,19 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     </head>
     <body>
         <section
             class="bg-custom-dark-blue py-24 lg:py-32 relative overflow-hidden"
         >
             <div
-                class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 lg:px-8 bg-yellow-600"
+                class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 lg:px-8 bg-slate-800 text-white"
             >
                 <div class="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
                     <div
@@ -39,14 +45,14 @@
                         TINH XẢO TỪ NGƯỜI
                     </h1>
                     <p
-                        class="text-lg lg:text-xl text-gray-400 mb-10 max-w-xl mx-auto lg:mx-0"
+                        class="text-lg lg:text-xl text-white-400 mb-10 max-w-xl mx-auto lg:mx-0"
                     >
                         55 năm cho một hành trình bền bỉ đưa gốm sứ Việt Nam
                         vươn tầm thế giới, tạo nên những tuyệt tác vĩnh cửu
                     </p>
                     <a
                         href="#"
-                        class="inline-flex items-center bg-transparent border-2 border-custom-light-golden text-custom-light-golden hover:bg-custom-light-golden hover:text-custom-dark-blue font-semibold py-3 px-8 rounded-md transition-all duration-300 text-base"
+                        class="inline-flex items-center bg-transparent border-2 border-custom-light-golden text-custom-light-golden hover:bg-custom-light-golden hover:text-custom-dark-blue font-semibold py-3 px-8 rounded-md transition-all duration-300 text-base mb-5"
                     >
                         Tìm hiểu thêm <i class="fas fa-arrow-right ml-3"></i>
                     </a>
@@ -63,5 +69,96 @@
                 </div>
             </div>
         </section>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img
+                        src="https://file.hstatic.net/200000532849/file/banner_home_page_mb_700x800px_2_94be2d75eee540fea11437a7aaca706e.png"
+                        alt=""
+                    />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://file.hstatic.net/200000532849/file/banner_home_page_mb_700x800px_2_94be2d75eee540fea11437a7aaca706e.png"
+                        alt=""
+                    />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://file.hstatic.net/200000532849/file/banner_home_page_mb_700x800px_4_530ae4804e9d4857931bb2c688319b65.png"
+                        alt=""
+                    />
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div
+                class="swiper-button-prev bg-gray-200/50 !w-8 !h-8 !text-black"
+            ></div>
+            <div
+                class="swiper-button-next bg-gray-200/50 !w-8 !h-8 !text-black"
+            ></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div>
+            <h1><b>Bộ Sưu Tập Minh Long</b></h1>
+            <p>
+                Sản phẩm Minh Long được phối hợp theo nhiều phong cách màu sắc,
+                chú trọng tính hài hòa, trang nhã nên phù hợp với mọi thời đại
+            </p>
+            <a
+                href="#"
+                class="inline-flex items-center bg-transparent border-2 border-custom-light-golden text-custom-light-golden hover:bg-custom-light-golden hover:text-custom-dark-blue font-semibold py-3 px-8 rounded-md transition-all duration-300 text-base mb-5"
+            >
+                Tìm hiểu thêm <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+        <script>
+            const swiper = new Swiper(".swiper", {
+                loop: true,
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+        <div class="">
+            <img src="" alt="" />
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://chus.vn/images/Blog/Vietnamese%20ceramics/a%CC%89nh%201.jpg?1751274247860"
+                    alt=""
+                />
+            </div>
+            <div
+                class="bg-blue-950 text-white text-2xl lg:text-7xl font-extrabold leading-snug mb-6 text-custom-light-golden"
+            >
+                <div>
+                    <h1><b>Tinh Hoa Từ Đất-Tinh Xảo Từ Người</b></h1>
+                </div>
+                <div>
+                    <p
+                        class="text-lg lg:text-xl text-white-400 mb-10 max-w-xl mx-auto lg:mx-0 p"
+                    >
+                        55 năm cho một hành trình bền bỉ đưa gốm sứ Việt Nam
+                        vươn tầm thế giới, tạo nên những tuyệt tác vĩnh cửu
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
