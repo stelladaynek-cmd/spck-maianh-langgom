@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    </head>
+
+    <body>
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <script src="https://cdn.tailwindcss.com"></script>
+            </head>
+            <body class="bg-gray-100">
+                <nav class="bg-[#1a243d] text-white p-4">
+                    <div
+                        class="flex justify-end gap-5 text-xs border-b border-gray-600 pb-2"
+                    >
+                        <a href="#">Bộ trà</a>
+                        <a href="#">Bộ đồ ăn</a>
+                        <a href="#">Ly, hộp sứ</a>
+                        <a href="#">Tượng linh vật</a>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-3">
+                        <div class="flex gap-6 text-sm">
+                            <a href="index.html" class="font-bold">Trang chủ</a>
+                            <a href="#">E-shop</a>
+                            <a href="#">Ưu đãi</a>
+                            <a href="#">Bảo hành</a>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="border-b border-white flex items-center"
+                            >
+                                <span class="mr-2">🔍</span>
+                                <input
+                                    type="text"
+                                    placeholder="Tìm kiếm..."
+                                    class="bg-transparent text-sm outline-none w-32"
+                                />
+                            </div>
+
+                            <span class="cursor-pointer">🛒</span>
+                            <a href="login.html" class="cursor-pointer">👤</a>
+                        </div>
+                    </div>
+                </nav>
+            </body>
+        </html>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img
+                        src="https://file.hstatic.net/200000532849/file/banner_home_page_mb_700x800px_2_94be2d75eee540fea11437a7aaca706e.png"
+                        alt=""
+                    />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://file.hstatic.net/200000532849/file/banner_home_page_mb_700x800px_2_94be2d75eee540fea11437a7aaca706e.png"
+                        alt=""
+                    />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://file.hstatic.net/200000532849/file/banner_home_page_mb_700x800px_4_530ae4804e9d4857931bb2c688319b65.png"
+                        alt=""
+                    />
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div
+                class="swiper-button-prev bg-gray-200/50 !w-8 !h-8 !text-black"
+            ></div>
+            <div
+                class="swiper-button-next bg-gray-200/50 !w-8 !h-8 !text-black"
+            ></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <script>
+            const swiper = new Swiper(".swiper", {
+                loop: true,
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+        <div class="">
+            <img src="" alt="" />
+        </div>
+    </body>
+</html>
