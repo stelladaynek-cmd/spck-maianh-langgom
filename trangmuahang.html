@@ -10,53 +10,54 @@
         />
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
     <body>
+        <nav
+            class="bg-[#1a243d] text-white flex justify-between items-center px-4 py-3"
+        >
+            <div class="flex gap-4 text-xs font-semibold">
+                <a href="/index.html">Trang Chủ</a>
+                <a href="/vechungtoi.html">VỀ CHÚNG TÔI</a>
+                <a href="#">THƯƠNG HIỆU</a>
+                <a href="#">CỬA HÀNG</a>
+                <a href="/bosuutap.html">bộ sưu tập</a>
+                <a href="/baohanh.html">BẢO HÀNH</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-yellow-600 px-4 py-1.5 rounded-full text-xs font-bold"
+                >
+                    <a href="/trangmuahang.html">mua trực tuyến</a>
+                </button>
+
+                <div class="relative">
+                    <span>🛒</span>
+                    <span
+                        class="absolute -top-2 -right-2 bg-red-500 text-[10px] px-1 rounded-full"
+                        >0</span
+                    >
+                </div>
+
+                <div class="text-xs border-l border-gray-500 pl-4 flex gap-2">
+                    <a href="/dangky.html" class="hover:text-yellow-500"
+                        >Đăng nhập</a
+                    >
+                    <span>/</span>
+                    <a href="/dangky.html" class="hover:text-yellow-500"
+                        >Đăng ký</a
+                    >
+                </div>
+            </div>
+        </nav>
         <!DOCTYPE html>
         <html>
             <head>
                 <script src="https://cdn.tailwindcss.com"></script>
             </head>
-            <body class="bg-gray-100">
-                <nav class="bg-[#1a243d] text-white p-4">
-                    <div
-                        class="flex justify-end gap-5 text-xs border-b border-gray-600 pb-2"
-                    >
-                        <a href="#">Bộ trà</a>
-                        <a href="#">Bộ đồ ăn</a>
-                        <a href="#">Ly, hộp sứ</a>
-                        <a href="#">Tượng linh vật</a>
-                    </div>
-
-                    <div class="flex justify-between items-center mt-3">
-                        <div class="flex gap-6 text-sm">
-                            <a href="index.html" class="font-bold">Trang chủ</a>
-                            <a href="#">E-shop</a>
-                            <a href="#">Ưu đãi</a>
-                            <a href="#">Bảo hành</a>
-                        </div>
-
-                        <div class="flex items-center gap-4">
-                            <div
-                                class="border-b border-white flex items-center"
-                            >
-                                <span class="mr-2">🔍</span>
-                                <input
-                                    type="text"
-                                    placeholder="Tìm kiếm..."
-                                    class="bg-transparent text-sm outline-none w-32"
-                                />
-                            </div>
-
-                            <span class="cursor-pointer">giỏ hàng</span>
-                            <a href="login.html" class="cursor-pointer">
-                                cá nhân</a
-                            >
-                        </div>
-                    </div>
-                </nav>
-            </body>
+            <body class="bg-gray-100"></body>
         </html>
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -114,9 +115,65 @@
         <div class="">
             <img src="" alt="" />
         </div>
-        class="bg-gray-100">
+        >
 
         <nav class="bg-[#1a243d] text-white p-4"></nav>
+        <div class="bg-white p-10">
+            <div
+                class="flex justify-between items-center mb-10 border-b-2 pb-5"
+            >
+                <h1 class="text-3xl font-bold uppercase text-gray-800">
+                    Danh mục sản phẩm
+                </h1>
+
+                <div class="flex gap-5 font-bold text-xs uppercase">
+                    <a href="#" class="text-[#d4af37]">Minh Long</a>
+                    <a href="#" class="text-gray-400">Ly's</a>
+                    <a href="#" class="text-gray-400">HealthyCook</a>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-8 justify-center">
+                <a href="/tuonglinhvat.html" class="w-40 text-center block">
+                    <div class="bg-[#fdf3e7] p-4 rounded">
+                        <img
+                            src="https://cdn.hstatic.net/files/200000532849/file/442384563thumb.png"
+                            class="w-full"
+                        />
+                    </div>
+                    <p class="font-bold text-xs mt-3 uppercase">
+                        Tượng linh vật
+                    </p>
+                    <p class="text-gray-400 text-[10px]">3 sản phẩm</p>
+                </a>
+
+                <a href="/travacafe.html" class="w-40 text-center block">
+                    <div class="bg-[#fdf3e7] p-4 rounded">
+                        <img
+                            src="https://file.hstatic.net/200000532849/file/minhlong-thumbweb_bo_tra_-_ca_phe_f58f39d386fe4c5d88ff60403801cfa9.png"
+                            class="w-full"
+                        />
+                    </div>
+                    <p class="font-bold text-xs mt-3 uppercase">
+                        Bộ trà/cà phê
+                    </p>
+                    <p class="text-gray-400 text-[10px]">3 sản phẩm</p>
+                </a>
+
+                <a href="/todiatraicay.html" class="w-40 text-center block">
+                    <div class="bg-[#fdf3e7] p-4 rounded">
+                        <img
+                            src="https://file.hstatic.net/200000532849/file/minhlong-thumbweb_-_danh_muc_san_pham_-_minh_long_to_-_dia_trai_cay_016526a711c14ab0b9b14ac21619f218.png"
+                            class="w-full"
+                        />
+                    </div>
+                    <p class="font-bold text-xs mt-3 uppercase">
+                        Tô/đĩa trái cây
+                    </p>
+                    <p class="text-gray-400 text-[10px]">3 sản phẩm</p>
+                </a>
+            </div>
+        </div>
 
         <div
             class="max-w-5xl mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8"
